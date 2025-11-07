@@ -3,21 +3,31 @@
   <head>
     <title>Multiple object detection using pre trained model in TensorFlow.js</title>
     <meta charset="utf-8">
-    <!-- Import the webpage's stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>  
   <body>
-    <h1>Multiple object detection using pre trained model in TensorFlow.js</h1>
+    <!-- Смилковски Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <span class="banner-text">Смилковски</span>
+      </div>
+    </div>
 
-    <p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>
+    <h1>Детекција на повеќе објекти со користење на претходно обучен модел во TensorFlow.js</h1>
+
+    <p>Почекајте моделот да се вчита пред да кликнете на копчето за да ја овозможите веб-камерата - по што таа ќе стане видлива за употреба.</p>
     
     <section id="demos" class="invisible">
-
-      <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+      <p>Држете неколку предмети блиску до вашата веб-камера за да добиете класификација во реално време! Кога ќе бидете подготвени, кликнете на „овозможи веб-камера“ подолу и прифатете го пристапот до веб-камерата кога прелистувачот ќе побара (проверете го горниот лев агол од вашиот прозорец)</p>
       
       <div id="liveView" class="camView">
+        <video id="webcam" autoplay muted playsinline></video>
+      </div>
+      
+      <div class="controls">
         <button id="webcamButton">Enable Webcam</button>
-        <video id="webcam" autoplay muted width="640" height="480"></video>
+        <button id="switchCameraButton" disabled>Switch Camera</button>
       </div>
     </section>
 
@@ -26,7 +36,6 @@
     <!-- Load the coco-ssd model to use to recognize things in images -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
     
-    <!-- Import the page's JavaScript to do some stuff -->
     <script src="script.js" defer></script>
   </body>
 </html>
