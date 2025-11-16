@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V11GS1LZJC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V11GS1LZJC');
-</script>
-
     <title>Multiple object detection using pre trained model in TensorFlow.js</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +22,7 @@
       <p>Држете неколку предмети блиску до вашата веб-камера за да добиете класификација во реално време! Кога ќе бидете подготвени, кликнете на „овозможи веб-камера“ подолу и прифатете го пристапот до веб-камерата кога прелистувачот ќе побара (проверете го горниот лев агол од вашиот прозорец)</p>
       
       <div id="liveView" class="camView">
-        <video id="webcam" autoplay muted playsinline></video>
+        
       </div>
       
       <div class="controls">
@@ -41,6 +30,7 @@
         <button id="switchCameraButton" disabled>Switch Camera</button>
       </div>
     </section>
+    <iframe src="https://footer-mkd.netlify.app/" frameborder="0"></iframe>
 
     <!-- Import TensorFlow.js library -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
